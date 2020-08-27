@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <title>CountDown</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./immortality.jpg" alt="picture">
+        <div class="content-wrapper">
+
+            <!-- Output -->
+            <article class="output-content">
+                <h1 class="content-heading">COUNTDOWN TILL 100 Y/0!</h1>
+                <div class="deadline-wrapper">
+                    <!-- years -->
+                    <div class="time-item">
+                        <h4 class="years">34</h4>
+                        <span>years</span>
+                    </div>
+                    <!-- end of item -->
+                    <!-- days -->
+                    <div class="time-item">
+                        <h4 class="days">34</h4>
+                        <span>days</span>
+                    </div>
+                    <!-- end of item -->
+                    <!-- hours -->
+                    <div class="time-item">
+                        <h4 class="hours">34</h4>
+                        <span>hours</span>
+                    </div>
+                    <!-- end of item -->
+                    <!-- mins -->
+                    <div class="time-item">
+                        <h4 class="mins">34</h4>
+                        <span>mins</span>
+                    </div>
+                    <!-- end of item -->
+                    <!-- secs -->
+                    <div class="time-item">
+                        <h4 class="secs">34</h4>
+                        <span>secs</span>
+                    </div>
+                    <!-- end of item -->
+                </div>
+                <h3 class="content-subtitle">Ever wished to increase your lifespan ?</h3>
+                <p class="content-text">Don't waste your time watching your time pass...  Work to make the world a fertile playground for the application of sciences and technologies.<br><br><a href="https://www.youtube.com/watch?v=jAhjPd4uNFY"><strong>Be Immortal Now !</strong></a></p>
+                <div class="button-wrapper">
+                    
+                    <button class="back-to-input" type="button">
+                        <i class="fa fa-arrow-left"></i>
+                        Back to Birth Date
+                    </button>
+                </div>
+            </article>
+            <!-- End of Output -->
+
+            <!-- Input -->
+            <article class="input-content active">
+                <h1 class="content-heading">ENTER YOUR BIRTH DATE !</h1>
+                <form id="form-user" method="post">
+                    <!-- Day -->
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-day">Day</label>
+                        <input type="day" id="input-day" required placeholder="Day" tabindex="1">
+                    </div>
+                    <!-- Month -->
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-month">Month</label>
+                        <select class="input-month" id="input-month" tabindex="2">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <!-- Year -->
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-year">Year</label>
+                        <input type="year" id="input-year" required placeholder="Year" tabindex="3">
+                    </div>
+                    <div class="form-box buttons-wrapper">
+                        <button class="reset" id="button-reset" type="button">Reset</button>
+                        <button class="submit" id="button-send" type="button">Send</button>
+                    </div>
+                </form>
+            </article>
+            <!-- End of Input -->
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
